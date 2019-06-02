@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Introduction from './components/Introduction';
+import Portfolio from './components/Portfolio';
+import Timeline from './components/Timeline';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+//////////////////////////////////////
+//
+// Constant
+//
+//////////////////////////////////////
+
+const dataText = [
+    "Hi, I'm Calvin!",
+    "My calling is that of an arch wizard, one who controls explosion magic, \
+    the strongest of all offensive magic! \
+    Do you also desire my forbidden strength, which is so almighty, \
+    I've been ostracized by the entire world?"
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Route
+                exact
+                path='/'
+                render={ (props) => (<Introduction dataText={dataText} {...props}/>) }
+            />
+            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/timeline" component={Timeline} />
+
+        </Router>
+    );
 }
 
 export default App;

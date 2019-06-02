@@ -1,0 +1,224 @@
+#timeline-page {
+    display: flex;
+	flex-direction: row;
+	background-color: #2a2a2a;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+
+    color: #cacaca;
+}
+
+#timeline-page .page-control-left {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0; /* need this to make it sticky */
+    margin: 0 0 0 25px;
+    opacity: 0;
+    animation-name: fadeInFromLeft;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+#timeline-page .page-control-right {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0; /* need this to make it sticky */
+    margin: 0 25px 0 0;
+    opacity: 0;
+    animation-name: fadeInFromRight;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.page-title {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+
+    /* border: 2px solid BLUE; */
+
+}
+
+.timeline-item .top {
+    display: flex;
+    flex-direction: row;
+
+    /* border: 2px solid white; */
+}
+
+.timeline-item .top .top-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* left shift */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -5%;
+    margin-right: 0px;
+
+    width: 20%;
+
+    /* border: 2px solid white; */
+}
+
+.timeline-item .top .top-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: 80%;
+}
+
+.timeline-item .bottom {
+    display: flex;
+
+    /* border: 2px solid black; */
+}
+
+.timeline-item .bottom .bottom-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /* left shift */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -5%;
+    margin-right: 0px;
+    width: 20%;
+}
+
+.timeline-item .bottom .bottom-right {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 0px;
+    width: 80%;
+}
+
+.timeline-item .top .top-left .circle {
+    flex-grow: 0;
+
+    width: 20px;
+    height: 20px;
+    position: relative; /* need position to use z-index */
+    z-index: 2;
+    border-radius: 50%;
+    border: 4px solid #2a2a2a;
+
+    background-color: #d55500;
+}
+
+.timeline-item .top .top-left .hline-invisible {
+    flex-grow: 1;
+    height: 4px;
+    position: relative; /* need position to use z-index */
+    z-index: 1;
+    
+}
+
+.timeline-item .top .top-left .hline {
+    flex-grow: 1;
+    height: 4px;
+    position: relative; /* need position to use z-index */
+    z-index: 1;
+    
+    background-color: #ddd;
+}
+
+.timeline-item .top .item-heading {
+    font-weight: bold;
+}
+
+.timeline-item .top .date {
+    background-color: #d55500;
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.timeline-item .bottom .bottom-left .vline {
+
+    width: 4px;
+
+    background-color: #ddd;
+}
+
+
+.timeline-item .top .top-left .big-circle {
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    position: relative; /* need position to use z-index */
+    z-index: 2;
+    border-radius: 50%;
+    border: 4px solid #2a2a2a;
+
+    color: white;
+    font-size: 130%;
+
+    background-color: #d55500;
+}
+
+.timeline-item .bottom .item-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline-item .bottom .item-content .description {
+    width: 70%;
+}
+
+.timeline-item .bottom .item-content .tags {
+    width: 30%;
+}
+
+.timeline-item .bottom .item-content .tags p {
+    text-align: right;
+}
+
+.timeline-item .bottom .item-content .tags span {
+    background-color: #d55500;
+    color: #fff;
+    display: inline-block;
+    padding: 0 5px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    white-space: nowrap; /* force tag to display on 1 line */
+}

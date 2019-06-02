@@ -1,0 +1,138 @@
+#portfolio-page {
+    display: flex;
+	flex-direction: row;
+	background-color: #2a2a2a;
+    font-family: Lato,Helvetica,Arial,sans-serif;
+}
+
+#portfolio-page .page-control-left {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0; /* need this to make it sticky */
+    margin: 0 0 0 25px;
+    opacity: 0;
+    animation-name: fadeInFromLeft;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+#portfolio-page .page-control-right {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0; /* need this to make it sticky */
+    margin: 0 25px 0 0;
+    opacity: 0;
+    animation-name: fadeInFromRight;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.portfolio h1 {
+    color: #cacaca;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projects {
+    /* height: 100%; don't set this... */
+    /* width: 100%; */
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 365px;
+    overflow: auto;
+    background-color: #ddd;
+}
+
+.project-item a {
+    display: block;
+    height: auto;
+    width: auto;
+    position: relative;
+}
+
+.project-item .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 4px;  /* hardcoding... this is bad */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #44535a;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-item .image-overlay:hover {
+    opacity: 0.75;
+}
+
+.project-item a > img {
+    height: 100%;
+    width: 100%;
+}
+
+.image-overlay img {
+    height: 75px;
+    width: 75px;
+}
+
+.project-item figcaption {
+    height: auto;
+    width: auto;
+    display: block;
+
+    color: #6a6a6a;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.project-item figcaption strong {
+    display: block;
+    color: #44535a;
+    text-transform: uppercase;
+}
+
+.more {
+    display: block;
+    margin: 100px 0;
+    text-align: center;
+    /* force "next button & contact me" to be on same line! */
+    white-space: nowrap; 
+}
+
+.more .button {
+    background-color: #44535a;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+
+    opacity: 0.75;
+    transition: opacity 0.3s;
+}
+
+.more .button:hover {
+    opacity: 1;
+}

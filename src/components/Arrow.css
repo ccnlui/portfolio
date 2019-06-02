@@ -1,0 +1,148 @@
+/* Below is css for animated arrow button */
+
+.next-arrow.right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #8a8a8a; */
+}
+
+.next-arrow.left {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #8a8a8a; */
+}
+
+.round {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    /* border: 2px solid #8a8a8a; */
+    /* border-radius: 100%; */
+}
+
+.targetText.right {
+    margin: 5px;
+    color: #8a8a8a;
+    font-weight: bold;
+    transform: translateX(50%);
+    opacity: 0;
+
+    transition-duration: 0.3s, 0.1s;
+    transition-property: transform, opacity;
+    transition-delay: 0.1s;
+}
+
+.targetText.left {
+    margin: 5px;
+    color: #8a8a8a;
+    font-weight: bold;
+    transform: translateX(-50%);
+    opacity: 0;
+
+    transition-duration: 0.3s, 0.1s;
+    transition-property: transform, opacity;
+    transition-delay: 0.1s;
+}
+
+.next-arrow:hover .targetText {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.arrow {
+    color: #8a8a8a;
+    font-size: 1.8em;
+    /* force two arrows to be on same line! */
+    white-space: nowrap; 
+}
+
+@keyframes bounceRight {
+    0% {
+        opacity: 1; 
+        transform: translateX(0px);
+    }
+    35% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    36% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1; 
+        transform: translateX(0px);
+    }
+}
+
+@keyframes bounceLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    35% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    36% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    70% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1; 
+        transform: translateX(0px);
+    }
+}
+
+.next-arrow:hover .arrow {
+    color: white;
+    cursor: pointer;
+}
+  
+.next-arrow:hover .right .first {
+    display: inline-block; /* need this to be able to transform a span */
+    animation-name: bounceRight;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.next-arrow:hover .right .second {
+    display: inline-block; /* need this to be able to transform a span */
+    animation-name: bounceRight;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.next-arrow:hover .left .first {
+    display: inline-block; /* need this to be able to transform a span */
+    animation-name: bounceLeft;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.next-arrow:hover .left .second {
+    display: inline-block; /* need this to be able to transform a span */
+    animation-name: bounceLeft;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
