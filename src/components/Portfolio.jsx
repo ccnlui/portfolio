@@ -44,6 +44,18 @@ class Portfolio extends Component {
                                     </div>
                                 </a>
                                 <figcaption>
+                                    <strong>Super Mario</strong>
+                                    <span>A random level of a Super Mario level</span>
+                                </figcaption>
+                            </figure>
+                            <figure className="project-item">
+                                <a>
+                                    <img src={pictorialImage} alt="pictorial.png"></img>
+                                    <div className="image-overlay">
+                                        <img src={typeReadImage} alt="type-read.png"></img>
+                                    </div>
+                                </a>
+                                <figcaption>
                                     <strong>Fotag</strong>
                                     <span>Android mobile app that can rate photos</span>
                                 </figcaption>
