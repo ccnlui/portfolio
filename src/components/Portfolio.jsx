@@ -15,7 +15,7 @@ class Portfolio extends Component {
                 <div className="page-control-left">
                     <Arrow 
                         direction="left" 
-                        path="/"
+                        path="/portfolio"
                         targetText="home"
                         onClick={ this.doClick }
                     />
