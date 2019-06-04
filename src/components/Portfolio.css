@@ -1,6 +1,6 @@
 #portfolio-page {
     display: flex;
-	flex-direction: row;
+    flex-direction: row;
 	background-color: #2a2a2a;
     font-family: Lato,Helvetica,Arial,sans-serif;
 }
@@ -35,6 +35,18 @@
     animation-fill-mode: forwards;
 }
 
+#portfolio-page .main-content {
+    /* main content should take all available space */
+    flex-grow: 1;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
 .portfolio h1 {
     color: #cacaca;
     font-size: 42px;
@@ -44,26 +56,29 @@
 
 .projects {
     /* height: 100%; don't set this... */
-    /* width: 100%; */
+    width: 100%;
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
+    /* border: 4px solid greenyellow; */
 }
 
 .project-item {
-    display: inline-block;
     position: relative;
     height: auto;
-    width: 365px;
+    max-width: 400px;
     overflow: auto;
     background-color: #ddd;
+
+    margin: 15px;
+
+    border: 4px solid white;
 }
 
 .project-item a {
     display: block;
-    height: auto;
-    width: auto;
     position: relative;
 }
 
@@ -87,7 +102,7 @@
 }
 
 .project-item a > img {
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
