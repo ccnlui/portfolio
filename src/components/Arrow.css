@@ -50,6 +50,12 @@
     transition-delay: 0.1s;
 }
 
+@media only screen and (max-width: 600px) {
+    .targetText {
+        display: none;
+    }
+}
+
 .next-arrow:hover .targetText {
     transform: translateX(0%);
     opacity: 1;

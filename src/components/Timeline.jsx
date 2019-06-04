@@ -33,7 +33,7 @@ class Timeline extends Component {
                                 <div className="top-right">
                                     <div className="item-heading">
                                         <span className="date">Apr. 2019</span>
-                                        Recevied Degree: Bachelor of Computing and Financial Management (CFM)
+                                        <span className="big-heading">Recevied Degree: Bachelor of Computing and Financial Management (CFM)</span>
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +182,7 @@ class Timeline extends Component {
                                 <div className="top-right">
                                     <div className="item-heading">
                                         <span className="date">Jan. 2016</span>
-                                        Program switch from AFM to CFM
+                                        <span className="big-heading">Program switch from AFM to CFM</span>
                                     </div>
                                 </div>
                             </div>
@@ -215,7 +215,7 @@ class Timeline extends Component {
                                 <div className="top-right">
                                     <div className="item-heading">
                                         <span className="date">Sep. 2013</span>
-                                        Started University: Accounting and Financial Management (AFM)
+                                        <span className="big-heading">Started University: Accounting and Financial Management (AFM)</span>
                                     </div>
                                 </div>
                             </div>

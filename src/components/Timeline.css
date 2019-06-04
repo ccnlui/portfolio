@@ -65,32 +65,46 @@
     /* border: 2px solid white; */
 }
 
+.timeline-item .top .test {
+    display: flex;
+    flex-direction: column;
+}
+
 .timeline-item .top .top-left {
+    /* dont take up available space */
+    flex-grow: 0;
+    flex-basis: 20%;
+
     display: flex;
     flex-direction: row;
     align-items: center;
 
     /* left shift */
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 0px;
     margin-left: -5%;
-    margin-right: 0px;
+    margin-right: 20px;
 
-    width: 20%;
+    min-width: 100px;
 
     /* border: 2px solid white; */
 }
 
 .timeline-item .top .top-right {
+    /* take up available space */
+    flex-grow: 1;
+    flex-basis: 80%;
+
     display: flex;
     flex-direction: row;
     align-items: center;
 
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 0px;
-    width: 80%;
+
+    /* border: 2px solid grey; */
 }
 
 .timeline-item .bottom {
@@ -100,6 +114,10 @@
 }
 
 .timeline-item .bottom .bottom-left {
+    /* dont take up available space */
+    flex-grow: 0;
+    flex-basis: 20%;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -108,26 +126,34 @@
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: -5%;
-    margin-right: 0px;
-    width: 20%;
+    margin-right: 20px;
+
+    min-width: 100px;
+
+    /* border: 2px solid black; */
 }
 
 .timeline-item .bottom .bottom-right {
+    /* take up available space */
+    flex-grow: 1;
+    flex-basis: 80%;
+
     display: flex;
     flex-direction: row;
 
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 0px;
-    width: 80%;
+
+    /* border: 2px solid white; */
 }
 
 .timeline-item .top .top-left .circle {
     flex-grow: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     position: relative; /* need position to use z-index */
     z-index: 2;
     border-radius: 50%;
@@ -151,6 +177,12 @@
     z-index: 1;
     
     background-color: #ddd;
+}
+
+.timeline-item .top .big-heading {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
 }
 
 .timeline-item .top .item-heading {
@@ -199,6 +231,14 @@
     flex-direction: row;
 }
 
+/* 1 column in on Phone screen */
+@media only screen and (max-width: 600px) {
+    .timeline-item .bottom .item-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .timeline-item .bottom .item-content .description {
     width: 70%;
 }
@@ -207,8 +247,24 @@
     width: 30%;
 }
 
+@media only screen and (max-width: 600px) {
+    .timeline-item .bottom .item-content .description {
+        width: 100%;
+    }
+    .timeline-item .bottom .item-content .tags {
+        width: 100%;
+    }
+}
+
 .timeline-item .bottom .item-content .tags p {
     text-align: right;
+}
+
+/* 1 column in on Phone screen */
+@media only screen and (max-width: 600px) {
+    .timeline-item .bottom .item-content .tags p {
+        text-align: left;
+    }
 }
 
 .timeline-item .bottom .item-content .tags span {
@@ -222,4 +278,9 @@
     margin-bottom: 10px;
 
     white-space: nowrap; /* force tag to display on 1 line */
+}
+
+/* hide vline for the last timeline item */
+.timeline-item:last-child .bottom .bottom-left .vline {
+    display: none;
 }
