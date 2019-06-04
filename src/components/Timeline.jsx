@@ -24,9 +24,6 @@ class Timeline extends Component {
                     <article className="timeline-item">
                             <div className="top">
                                 <div className="top-left">
-                                    <div className="hi">
-                                        <div className="vline"></div>
-                                    </div>
                                     <div className="mid">
                                         <div className="hline-invisible"></div>
                                         <div className="big-circle">
@@ -39,7 +36,7 @@ class Timeline extends Component {
                                     </div>
                                 </div>
                                 <div className="top-right">
-                                    <div className="item-heading">
+                                    <div className="item-heading big">
                                         <span className="date">Apr. 2019</span>
                                         <span className="big-heading">Recevied Degree: Bachelor of Computing and Financial Management (CFM)</span>
                                     </div>
@@ -65,9 +62,6 @@ class Timeline extends Component {
                         <article className="timeline-item">
                             <div className="top">
                                 <div className="top-left">
-                                    <div className="hi">
-                                        <div className="vline"></div>
-                                    </div>
                                     <div className="mid">
                                         <div className="hline-invisible"></div>
                                         <div className="circle"></div>
@@ -114,9 +108,6 @@ class Timeline extends Component {
                         <article className="timeline-item">
                             <div className="top">
                                 <div className="top-left">
-                                    <div className="hi">
-                                        <div className="vline"></div>
-                                    </div>
                                     <div className="mid">
                                         <div className="hline-invisible"></div>
                                         <div className="circle"></div>
@@ -161,9 +152,6 @@ class Timeline extends Component {
                         <article className="timeline-item">
                             <div className="top">
                                 <div className="top-left">
-                                    <div className="hi">
-                                        <div className="vline"></div>
-                                    </div>
                                     <div className="mid">
                                         <div className="hline-invisible"></div>
                                         <div className="circle"></div>
@@ -205,9 +193,6 @@ class Timeline extends Component {
                         <article className="timeline-item">
                             <div className="top">
                                 <div className="top-left">
-                                    <div className="hi">
-                                        <div className="vline"></div>
-                                    </div>
                                     <div className="mid">
                                         <div className="hline-invisible"></div>
                                         <div className="big-circle">
@@ -220,7 +205,7 @@ class Timeline extends Component {
                                     </div>
                                 </div>
                                 <div className="top-right">
-                                    <div className="item-heading">
+                                    <div className="item-heading big">
                                         <span className="date">Jan. 2016</span>
                                         <span className="big-heading">Program switch from AFM to CFM</span>
                                     </div>
@@ -246,9 +231,6 @@ class Timeline extends Component {
                         <article className="timeline-item">
                             <div className="top">
                                 <div className="top-left">
-                                    <div className="hi">
-                                        <div className="vline"></div>
-                                    </div>
                                     <div className="mid">
                                         <div className="hline-invisible"></div>
                                         <div className="big-circle">
@@ -261,7 +243,7 @@ class Timeline extends Component {
                                     </div>
                                 </div>
                                 <div className="top-right">
-                                    <div className="item-heading">
+                                    <div className="item-heading big">
                                         <span className="date">Sep. 2013</span>
                                         <span className="big-heading">Started University: Accounting and Financial Management (AFM)</span>
                                     </div>

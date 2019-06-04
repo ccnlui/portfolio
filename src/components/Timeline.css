@@ -97,7 +97,7 @@
 
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
 
     margin-top: 0px;
     margin-bottom: 0px;
@@ -105,15 +105,6 @@
     margin-right: 0px;
 
     /* border: 2px solid grey; */
-}
-
-.timeline-item .top .top-left .hi {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    width: 100%;
-    height: 100%;
 }
 
 .timeline-item .top .top-left .hi .vline {
@@ -130,6 +121,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    /* border: 2px solid grey; */
 }
 
 .timeline-item .top .top-left .lo {
@@ -139,6 +132,8 @@
 
     width: 100%;
     height: 100%;
+
+    /* border: 2px solid grey; */
 }
 
 .timeline-item .top .top-left .lo .vline {
@@ -224,6 +219,10 @@
     font-size: 20px;
     font-weight: bold;
     line-height: 1.5;
+}
+
+.timeline-item .top .item-heading.big {
+    margin-top: 15px;
 }
 
 .timeline-item .top .item-heading {
@@ -323,11 +322,6 @@
 
 /* hide vline for the last timeline item */
 .timeline-item:last-child .bottom .bottom-left .vline {
-    display: none;
-}
-
-/* hide vline for the first timeline item */
-.timeline-item:first-child .top .top-left .hi .vline {
     display: none;
 }
 
