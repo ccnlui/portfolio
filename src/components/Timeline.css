@@ -76,7 +76,7 @@
     flex-basis: 20%;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 
     /* left shift */
@@ -105,6 +105,47 @@
     margin-right: 0px;
 
     /* border: 2px solid grey; */
+}
+
+.timeline-item .top .top-left .hi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.timeline-item .top .top-left .hi .vline {
+    width: 4px;
+    height: 100%;
+
+    background-color: #ddd;
+}
+
+.timeline-item .top .top-left .mid {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.timeline-item .top .top-left .lo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.timeline-item .top .top-left .lo .vline {
+    width: 4px;
+    height: 100%;
+
+    background-color: #ddd;
 }
 
 .timeline-item .bottom {
@@ -282,5 +323,15 @@
 
 /* hide vline for the last timeline item */
 .timeline-item:last-child .bottom .bottom-left .vline {
+    display: none;
+}
+
+/* hide vline for the first timeline item */
+.timeline-item:first-child .top .top-left .hi .vline {
+    display: none;
+}
+
+/* hide vline for the last timeline item */
+.timeline-item:last-child .top .top-left .lo .vline {
     display: none;
 }

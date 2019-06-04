@@ -24,11 +24,19 @@ class Timeline extends Component {
                     <article className="timeline-item">
                             <div className="top">
                                 <div className="top-left">
-                                    <div className="hline-invisible"></div>
-                                    <div className="big-circle">
-                                        <FontAwesomeIcon icon={faGraduationCap} />
+                                    <div className="hi">
+                                        <div className="vline"></div>
                                     </div>
-                                    <div className="hline"></div>
+                                    <div className="mid">
+                                        <div className="hline-invisible"></div>
+                                        <div className="big-circle">
+                                            <FontAwesomeIcon icon={faGraduationCap} />
+                                        </div>
+                                        <div className="hline"></div>
+                                    </div>
+                                    <div className="lo">
+                                        <div className="vline"></div>
+                                    </div>
                                 </div>
                                 <div className="top-right">
                                     <div className="item-heading">
@@ -57,9 +65,17 @@ class Timeline extends Component {
                         <article className="timeline-item">
                             <div className="top">
                                 <div className="top-left">
-                                    <div className="hline-invisible"></div>
-                                    <div className="circle"></div>
-                                    <div className="hline"></div>
+                                    <div className="hi">
+                                        <div className="vline"></div>
+                                    </div>
+                                    <div className="mid">
+                                        <div className="hline-invisible"></div>
+                                        <div className="circle"></div>
+                                        <div className="hline"></div>
+                                    </div>
+                                    <div className="lo">
+                                        <div className="vline"></div>
+                                    </div>
                                 </div>
                                 <div className="top-right">
                                     <div className="item-heading">
@@ -98,9 +114,17 @@ class Timeline extends Component {
                         <article className="timeline-item">
                             <div className="top">
                                 <div className="top-left">
-                                    <div className="hline-invisible"></div>
-                                    <div className="circle"></div>
-                                    <div className="hline"></div>
+                                    <div className="hi">
+                                        <div className="vline"></div>
+                                    </div>
+                                    <div className="mid">
+                                        <div className="hline-invisible"></div>
+                                        <div className="circle"></div>
+                                        <div className="hline"></div>
+                                    </div>
+                                    <div className="lo">
+                                        <div className="vline"></div>
+                                    </div>
                                 </div>
                                 <div className="top-right">
                                     <div className="item-heading">
@@ -137,9 +161,17 @@ class Timeline extends Component {
                         <article className="timeline-item">
                             <div className="top">
                                 <div className="top-left">
-                                    <div className="hline-invisible"></div>
-                                    <div className="circle"></div>
-                                    <div className="hline"></div>
+                                    <div className="hi">
+                                        <div className="vline"></div>
+                                    </div>
+                                    <div className="mid">
+                                        <div className="hline-invisible"></div>
+                                        <div className="circle"></div>
+                                        <div className="hline"></div>
+                                    </div>
+                                    <div className="lo">
+                                        <div className="vline"></div>
+                                    </div>
                                 </div>
                                 <div className="top-right">
                                     <div className="item-heading">
@@ -173,11 +205,19 @@ class Timeline extends Component {
                         <article className="timeline-item">
                             <div className="top">
                                 <div className="top-left">
-                                    <div className="hline-invisible"></div>
-                                    <div className="big-circle">
-                                        <FontAwesomeIcon icon={faSyncAlt} />
+                                    <div className="hi">
+                                        <div className="vline"></div>
                                     </div>
-                                    <div className="hline"></div>
+                                    <div className="mid">
+                                        <div className="hline-invisible"></div>
+                                        <div className="big-circle">
+                                            <FontAwesomeIcon icon={faSyncAlt} />
+                                        </div>
+                                        <div className="hline"></div>
+                                    </div>
+                                    <div className="lo">
+                                        <div className="vline"></div>
+                                    </div>
                                 </div>
                                 <div className="top-right">
                                     <div className="item-heading">
@@ -206,11 +246,19 @@ class Timeline extends Component {
                         <article className="timeline-item">
                             <div className="top">
                                 <div className="top-left">
-                                    <div className="hline-invisible"></div>
-                                    <div className="big-circle">
-                                        <FontAwesomeIcon icon={faSchool} />
+                                    <div className="hi">
+                                        <div className="vline"></div>
                                     </div>
-                                    <div className="hline"></div>
+                                    <div className="mid">
+                                        <div className="hline-invisible"></div>
+                                        <div className="big-circle">
+                                            <FontAwesomeIcon icon={faSchool} />
+                                        </div>
+                                        <div className="hline"></div>
+                                    </div>
+                                    <div className="lo">
+                                        <div className="vline"></div>
+                                    </div>
                                 </div>
                                 <div className="top-right">
                                     <div className="item-heading">
