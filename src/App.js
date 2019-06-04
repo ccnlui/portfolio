@@ -24,11 +24,11 @@ function App() {
         <Router>
             <Route
                 exact
-                path='/'
+                path='/portfolio'
                 render={ (props) => (<Introduction dataText={dataText} {...props}/>) }
             />
-            <Route path="/portfolio" component={Portfolio} />
-            <Route path="/timeline" component={Timeline} />
+            <Route path="/portfolio/developer-portfolio" component={Portfolio} />
+            <Route path="/portfolio/timeline" component={Timeline} />
 
         </Router>
     );

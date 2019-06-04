@@ -83,7 +83,7 @@ class Portfolio extends Component {
                 <div className="page-control-right">
                     <Arrow 
                         direction="right" 
-                        path="/timeline"
+                        path="/portfolio/timeline"
                         targetText="timeline"
                         onClick={ this.doClick }
                     />
