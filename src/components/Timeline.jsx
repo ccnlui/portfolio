@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Timeline.css';
 import Arrow from './Arrow';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGraduationCap, faSchool, faSyncAlt } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap, faSchool, faExchangeAlt } from '@fortawesome/free-solid-svg-icons';
 
 class Timeline extends Component {
 
@@ -196,7 +196,7 @@ class Timeline extends Component {
                                     <div className="mid">
                                         <div className="hline-invisible"></div>
                                         <div className="big-circle">
-                                            <FontAwesomeIcon icon={faSyncAlt} />
+                                            <FontAwesomeIcon icon={faExchangeAlt} />
                                         </div>
                                         <div className="hline"></div>
                                     </div>

@@ -25,7 +25,7 @@ class Portfolio extends Component {
                         <h1 className="page-title">Developer Portfolio</h1>
                         <div className="projects">
                             <figure className="project-item">
-                                <a>
+                                <a href="https://github.com/ccnlui/DinoGame">
                                     <img src={pictorialImage} alt="pictorial.png"></img>
                                     <div className="image-overlay">
                                         <img src={typeReadImage} alt="type-read.png"></img>
@@ -37,7 +37,7 @@ class Portfolio extends Component {
                                 </figcaption>
                             </figure>
                             <figure className="project-item">
-                                <a>
+                                <a href="https://github.com/ccnlui/MarioClone">
                                     <img src={pictorialImage} alt="pictorial.png"></img>
                                     <div className="image-overlay">
                                         <img src={typeReadImage} alt="type-read.png"></img>
@@ -45,11 +45,11 @@ class Portfolio extends Component {
                                 </a>
                                 <figcaption>
                                     <strong>Super Mario</strong>
-                                    <span>A random level of a Super Mario level</span>
+                                    <span>A random level of the Super Mario game</span>
                                 </figcaption>
                             </figure>
                             <figure className="project-item">
-                                <a>
+                                <a href="https://github.com/ccnlui/Fotag">
                                     <img src={pictorialImage} alt="pictorial.png"></img>
                                     <div className="image-overlay">
                                         <img src={typeReadImage} alt="type-read.png"></img>
@@ -61,7 +61,7 @@ class Portfolio extends Component {
                                 </figcaption>
                             </figure>
                             <figure className="project-item">
-                                <a>
+                                <a href="https://github.com/ccnlui/Chess2D">
                                     <img src={pictorialImage} alt="pictorial.png"></img>
                                     <div className="image-overlay">
                                         <img src={typeReadImage} alt="type-read.png"></img>
