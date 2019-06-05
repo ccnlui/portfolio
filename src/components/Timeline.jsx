@@ -85,9 +85,9 @@ class Timeline extends Component {
                                 <div className="bottom-right">
                                     <div className="item-content">
                                         <div className="description">
-                                            <p>Interned at a Virtual Reality Arcade as a developer. I worked on the booking software,
-                                                spending majority of my time on the desktop GUI, both frontend and backend of the website.
-                                                Gained a little bit of exposure to Unity development as well!
+                                            <p>Interned at a Virtual Reality Arcade as a developer. I help developed the booking software,
+                                                spending most of my time on the desktop GUI, both frontend and backend of the booking website.
+                                                Also gained a little bit of exposure to Unity development as well!
                                             </p>
                                         </div>
                                         <div className="tags">
