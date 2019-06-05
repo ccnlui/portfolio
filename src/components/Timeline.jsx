@@ -73,7 +73,7 @@ class Timeline extends Component {
                                 </div>
                                 <div className="top-right">
                                     <div className="item-heading">
-                                        <span className="date">Sep. 2019</span>
+                                        <span className="date">Sep. 2018</span>
                                         Developer - Ctrl V
                                     </div>
                                 </div>
@@ -139,9 +139,9 @@ class Timeline extends Component {
                                         <div className="tags">
                                             <p>
                                                 <span>Robot Framework</span>
-                                                <span>Selenium WebDriver</span>
                                                 <span>Python</span>
                                                 <span>Javascript</span>
+                                                <span>Selenium Webdriver</span>
                                             </p>
                                             
                                         </div>
