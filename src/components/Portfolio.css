@@ -129,7 +129,7 @@
     text-transform: uppercase;
 }
 
-.more {
+#portfolio-page .more {
     display: block;
     margin: 100px 0;
     text-align: center;
@@ -137,7 +137,7 @@
     white-space: nowrap; 
 }
 
-.more .button {
+#portfolio-page .more .button {
     background-color: #44535a;
     border-radius: 10px;
     color: #fff;
@@ -148,6 +148,6 @@
     transition: opacity 0.3s;
 }
 
-.more .button:hover {
+#portfolio-page .more .button:hover {
     opacity: 1;
 }

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Introduction.css';
 import Arrow from './Arrow';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFile, faCoffee, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 class Introduction extends Component {
 
@@ -135,6 +137,7 @@ class Introduction extends Component {
         return (
             <div id="landing-page" className="page-content">
                 <div className="introduction">
+                    <div className="empty-flex-item-one"></div>
                     <h3 className="heading">
                         {this.state.currHeading}
                         <span ref={this.headingCursor}>_</span>
@@ -143,6 +146,12 @@ class Introduction extends Component {
                         {this.state.currParagraph}
                         <span ref={this.paragraphCursor}>_</span>
                     </h1>
+                    <div className="empty-flex-item-two"></div>
+                    <div className="more">
+                        <a className="button">
+                        <FontAwesomeIcon icon={faArrowAltCircleRight} />&nbsp; Resume
+                        </a>
+                    </div>
                 </div>
                 <div className="page-control-right">
                     <Arrow 

@@ -1,21 +1,35 @@
 #landing-page {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 	background-color: #2a2a2a;
 	font-family: Lato,Helvetica,Arial,sans-serif;
+
+	/* hide vertical scroll bar */
+	overflow-y: hidden; 
 }
 
 .introduction {
 	width: 100%;
-	margin: 10%;
-	position: relative;	
-	text-align: center;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
 
 	transition: transform .45s cubic-bezier(0,.75,0,1);
 }
 
+.empty-flex-item-one {
+	flex-grow: 3;
+}
+
+.empty-flex-item-two {
+	flex-grow: 2;
+}
+
 .heading {
+
+	margin-left: 5%;
+
 	color: #cacaca;
 	text-align: left;
 	font-size: 1.8em;
@@ -23,10 +37,61 @@
 }
 
 .paragraph {
+
+	margin: 0 0 25px 5%;
+
 	color: #8a8a8a;
 	text-align: left;
     font-size: 1.05em;
 	font-weight: 400;
+}
+
+@keyframes fadeInFromBottom {
+	0% {
+		transform: translateY(750px);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+#landing-page .more {
+	
+	margin-left: 5%;
+	margin-bottom: 100px;
+
+    text-align: center;
+    /* force "next button & contact me" to be on same line! */
+	white-space: nowrap; 
+
+	transform: translateY(750px);
+	opacity: 1;
+	
+	animation-name: fadeInFromBottom;
+	animation-duration: 0.5s;
+	animation-delay: 5s;
+	animation-fill-mode: forwards;
+}
+
+#landing-page .more:hover {
+	cursor: pointer;
+}
+
+#landing-page .more .button {
+    background-color: #44535a;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+
+    opacity: 0.75;
+    transition: opacity 0.3s;
+}
+
+#landing-page .more .button:hover {
+    opacity: 1;
 }
 
 @keyframes flashCursor {
