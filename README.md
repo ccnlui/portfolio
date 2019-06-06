@@ -6,4 +6,10 @@ This is a website made with React and React Router. It serves to be a portfolio 
 ### **Date**: 6/6/2019
 ### **Goal**: Learn how to use React to make a website!
 ### **What I Have Learned**:
-A bunch of CSS and Javascript tricks to make a website look nice. Animation and transition are pretty fun and I wish I can spend more time getting better at it. React Router, Github Pages are also something I've picked up along the way.
+A bunch of CSS and Javascript tricks to make a website look nice. Animation and transition are pretty fun and I wish I can spend more time getting better at it. React Router, Github Pages, Font Awesome Icons are also something I've picked up along the way.
+
+### **Reference**:
+I've only borrowed ideas, everything in this project is coded by myself.
+
+- https://caferati.me/
+- http://alexismangin.com/
