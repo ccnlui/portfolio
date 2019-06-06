@@ -5,6 +5,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    font-size: 100%;
+
     /* border: 2px solid #8a8a8a; */
 }
 
@@ -13,7 +16,19 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+
+    font-size: 100%;
+
     /* border: 2px solid #8a8a8a; */
+}
+
+@media only screen and (max-width: 600px) {
+    .next-arrow.left {
+        font-size: 75%;
+    }
+    .next-arrow.right {
+        font-size: 75%;
+    }
 }
 
 .round {

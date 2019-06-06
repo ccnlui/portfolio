@@ -9,8 +9,8 @@
 
 #timeline-page .page-control-left {
     display: flex;
-    width: 15%;
-    justify-content: center;
+    margin-left: 25px;
+    justify-content: flex-start;
     align-items: center;
     position: sticky;
     top: 0; /* need this to make it sticky */
@@ -24,8 +24,8 @@
 
 #timeline-page .page-control-right {
     display: flex;
-    width: 15%;
-    justify-content: center;
+    margin-right: 25px;
+    justify-content: flex-end;
     align-items: center;
     position: sticky;
     top: 0; /* need this to make it sticky */
@@ -35,6 +35,18 @@
     animation-duration: 0.5s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 600px) {
+
+	#timeline-page .page-control-left {
+		margin-left: 5px;
+    }
+
+    #timeline-page .page-control-right {
+		margin-right: 5px;
+    }
+    
 }
 
 .page-title {
@@ -83,10 +95,10 @@
     margin-top: 0;
     margin-bottom: 0px;
     margin-left: -5%;
-    margin-right: 20px;
+    margin-right: 10px;
 
     max-width: 150px;
-    min-width: 100px;
+    min-width: 75px;
 
     /* border: 2px solid white; */
 }
@@ -104,9 +116,6 @@
     margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
-
-    /* prevent splitting Date into 2 lines */
-    min-width: 250px;
 
     /* border: 2px solid grey; */
 }
@@ -166,10 +175,10 @@
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: -5%;
-    margin-right: 20px;
+    margin-right: 10px;
 
     max-width: 150px;
-    min-width: 100px;
+    min-width: 75px;
 
     /* border: 2px solid black; */
 }
@@ -236,6 +245,9 @@
 }
 
 .timeline-item .top .date {
+    /* prevent date from wrapping */
+    display: inline-block;
+
     background-color: #d55500;
     padding: 5px 10px;
     margin-right: 10px;

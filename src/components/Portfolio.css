@@ -7,8 +7,8 @@
 
 #portfolio-page .page-control-left {
     display: flex;
-    width: 15%;
-    justify-content: center;
+    margin-left: 25px;
+    justify-content: flex-start;
     align-items: center;
     position: sticky;
     top: 0; /* need this to make it sticky */
@@ -22,8 +22,8 @@
 
 #portfolio-page .page-control-right {
     display: flex;
-    width: 15%;
-    justify-content: center;
+    margin-right: 25px;
+    justify-content: flex-end;
     align-items: center;
     position: sticky;
     top: 0; /* need this to make it sticky */
@@ -33,6 +33,18 @@
     animation-duration: 0.5s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 600px) {
+
+	#portfolio-page .page-control-left {
+		margin-left: 10px;
+    }
+
+    #portfolio-page .page-control-right {
+		margin-right: 10px;
+    }
+    
 }
 
 #portfolio-page .main-content {

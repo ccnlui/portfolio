@@ -29,6 +29,7 @@
 .heading {
 
 	margin-left: 5%;
+	margin-right: 5%;
 
 	color: #cacaca;
 	text-align: left;
@@ -38,7 +39,7 @@
 
 .paragraph {
 
-	margin: 0 0 25px 5%;
+	margin: 0 5% 25px 5%;
 
 	color: #8a8a8a;
 	text-align: left;
@@ -138,12 +139,11 @@
 }
 
 #landing-page .page-control-right {
+	margin-right: 5%;
+
 	display: flex;
-	width: 15%;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
-	position: relative;
-	margin: 0 25px 0 0;
 
 	opacity: 0;
 
@@ -151,4 +151,12 @@
 	animation-duration: 0.5s;
 	animation-delay: 5s;
 	animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 600px) {
+
+	#landing-page .page-control-right {
+		margin-right: 10px;
+	}
+
 }
