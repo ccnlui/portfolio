@@ -46,7 +46,7 @@ class Introduction extends Component {
 
     // componentWillUnmount():
     componentWillUnmount() {
-        console.log("Introduction::componentWillUnmount()");
+        // console.log("Introduction::componentWillUnmount()");
         clearTimeout(this.state.timeout);
     }
 
@@ -123,7 +123,6 @@ class Introduction extends Component {
                 // keep typing
                 const nextTimeout = setTimeout(this.typeParagraph, 30);
 
-                // type every 30ms (set in componentDidUpdate)
                 this.setState({
                     currParagraph: nextParagraph,
                     timeout: nextTimeout,

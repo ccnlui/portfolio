@@ -41,6 +41,9 @@
 
 	margin: 0 5% 25px 5%;
 
+	/* 14% of vh */
+	min-height: 14vh;
+
 	color: #8a8a8a;
 	text-align: left;
     font-size: 1.05em;
