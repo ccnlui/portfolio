@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Portfolio.css';
 import typeReadImage from '../images/type-read.png';
 import pictorialImage from '../images/project-pictorial.png';
+import dinoGameImage from '../images/project-DinoGame.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 import Arrow from './Arrow';
@@ -26,7 +27,7 @@ class Portfolio extends Component {
                         <div className="projects">
                             <figure className="project-item">
                                 <a href="https://github.com/ccnlui/DinoGame">
-                                    <img src={pictorialImage} alt="pictorial.png"></img>
+                                    <img src={dinoGameImage} alt="project-DinoGame.png"></img>
                                     <div className="image-overlay">
                                         <img src={typeReadImage} alt="type-read.png"></img>
                                     </div>
