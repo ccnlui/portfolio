@@ -3,7 +3,7 @@ import './App.css';
 import Introduction from './components/Introduction';
 import Portfolio from './components/Portfolio';
 import Timeline from './components/Timeline';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 
 //////////////////////////////////////
 //
