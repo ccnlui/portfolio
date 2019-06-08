@@ -5,6 +5,8 @@ import pictorialImage from '../images/project-pictorial.png';
 import dinoGameImage from '../images/project-DinoGame.png';
 import snakeImage from '../images/project-Snake.png';
 import marioImage from '../images/project-Mario.png';
+import fotagImage from '../images/project-Fotag.png';
+import chess2DImage from '../images/project-Chess2D.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 import Arrow from './Arrow';
@@ -65,7 +67,7 @@ class Portfolio extends Component {
                             </figure>
                             <figure className="project-item">
                                 <a href="https://github.com/ccnlui/Fotag">
-                                    <img src={marioImage} alt="pictorial.png"></img>
+                                    <img src={fotagImage} alt="project-Fotag.png"></img>
                                     <div className="image-overlay">
                                         <img src={typeReadImage} alt="type-read.png"></img>
                                     </div>
@@ -77,7 +79,7 @@ class Portfolio extends Component {
                             </figure>
                             <figure className="project-item">
                                 <a href="https://github.com/ccnlui/Chess2D">
-                                    <img src={pictorialImage} alt="pictorial.png"></img>
+                                    <img src={chess2DImage} alt="project-Chess2D.png"></img>
                                     <div className="image-overlay">
                                         <img src={typeReadImage} alt="type-read.png"></img>
                                     </div>
