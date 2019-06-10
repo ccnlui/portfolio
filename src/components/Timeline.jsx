@@ -13,7 +13,7 @@ class Timeline extends Component {
                 <div className="page-control-left">
                     <Arrow 
                         direction="left" 
-                        path="/portfolio/developer-portfolio"
+                        path="/developer-portfolio"
                         targetText="portfolio"
                         onClick={ this.doClick }
                     />
@@ -271,7 +271,7 @@ class Timeline extends Component {
                 <div className="page-control-right">
                     <Arrow 
                         direction="right"
-                        path="/portfolio"
+                        path="/"
                         targetText="home"
                         onClick={ this.doClick }
                     />
