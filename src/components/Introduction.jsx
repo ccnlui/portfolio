@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './Introduction.css';
 import Arrow from './Arrow';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFile, faCoffee, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
-import resume from '../pdf/Resume_6.9.2019.pdf';
+import { faFile, faDownload, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
+import resume from '../pdf/Resume_6.18.2019.pdf';
 
 class Introduction extends Component {
 
@@ -149,8 +149,8 @@ class Introduction extends Component {
                     <div className="empty-flex-item-two"></div>
                     <div className="more">
                         <a className="button" href={resume}>
-                            <FontAwesomeIcon icon={faArrowAltCircleRight}/>
-                            &nbsp; Resume
+                            <FontAwesomeIcon icon={faDownload}/>
+                            &nbsp; Resumé
                         </a>
                     </div>
                 </div>
