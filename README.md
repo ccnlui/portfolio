@@ -15,3 +15,6 @@ I've only borrowed ideas, everything in this project is coded by myself.
 
 - https://caferati.me/
 - http://alexismangin.com/
+
+Deploy:
+npm run deploy
