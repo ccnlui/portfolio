@@ -3,7 +3,7 @@ import './Introduction.css';
 import Arrow from './Arrow';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile, faDownload, faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
-import resume from '../pdf/Resume_10.4.2020.pdf';
+import resume from '../pdf/Resume_2021-02-27.pdf';
 
 class Introduction extends Component {
 
